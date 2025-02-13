@@ -16,6 +16,7 @@ import BlogPage from '@/pages/blog'
 import BlogPostPage from '@/pages/blog/posts/[id]'
 import AboutPage from './pages/about'
 import SignupPage from './pages/signup'
+import SaaSPage from './pages/saas'
 
 // Markdown content
 import { html as termsHtml } from '@/pages/terms.md'
@@ -47,6 +48,7 @@ function App() {
           <Route path="/sla" element={<MarkdownPage html={slaHtml} />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:id" element={<BlogPostPage />} />
+          <Route path="/solutions/saas" element={<SaaSPage />} />
         </Routes>
         <Footer />
         <ChatWidget />

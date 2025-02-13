@@ -1,14 +1,14 @@
 import { PricingTiers } from '@/components/sections/pricing/PricingTiers'
 import { Button } from '@/components/ui/button'
-import { Check, Info } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { useTranslation } from 'react-i18next'
 import { DetailedPricing } from '@/components/sections/pricing/DetailedPricing'
+import { Info, Check } from 'lucide-react'
 
 export default function PricingPage() {
   const { t } = useTranslation()

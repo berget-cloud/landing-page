@@ -22,42 +22,42 @@ export function Header() {
         <nav className="hidden md:flex items-center space-x-8">
           {/* Products */}
           <Link to="/products" className="text-sm text-white/60 hover:text-white transition-colors">
-            Products
+            {t('header.navigation.products')}
           </Link>
 
           {/* Why Berget */}
           <Link to="/why-berget" className="text-sm text-white/60 hover:text-white transition-colors">
-            Why Berget
+            {t('header.navigation.whyBerget')}
           </Link>
 
           {/* For Developers */}
           <Link to="/developers" className="text-sm text-white/60 hover:text-white transition-colors">
-            For Developers
+            {t('header.navigation.developers')}
           </Link>
 
           {/* Pricing */}
           <Link to="/pricing" className="text-sm text-white/60 hover:text-white transition-colors">
-            Pricing
+            {t('header.navigation.pricing')}
           </Link>
 
           {/* Documentation */}
           <Link to="/docs" className="text-sm text-white/60 hover:text-white transition-colors">
-            Documentation
+            {t('header.navigation.documentation')}
           </Link>
 
           {/* Blog */}
           <Link to="/blog" className="text-sm text-white/60 hover:text-white transition-colors">
-            Blog
+            {t('header.navigation.blog')}
           </Link>
 
           <LanguageSwitcher />
 
           <Button variant="secondary" size="sm" asChild>
-            <Link to="/login">Log in</Link>
+            <Link to="/login">{t('header.buttons.signIn')}</Link>
           </Button>
 
           <Button size="sm" asChild>
-            <Link to="/signup">Sign up</Link>
+            <Link to="/signup">{t('header.buttons.getStarted')}</Link>
           </Button>
         </nav>
 
@@ -88,42 +88,42 @@ export function Header() {
                     className="text-2xl text-white hover:text-white/80 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Products
+                    {t('header.navigation.products')}
                   </Link>
                   <Link 
                     to="/why-berget" 
                     className="text-2xl text-white hover:text-white/80 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Why Berget
+                    {t('header.navigation.whyBerget')}
                   </Link>
                   <Link 
                     to="/developers" 
                     className="text-2xl text-white hover:text-white/80 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    For Developers
+                    {t('header.navigation.developers')}
                   </Link>
                   <Link 
                     to="/pricing" 
                     className="text-2xl text-white hover:text-white/80 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Pricing
+                    {t('header.navigation.pricing')}
                   </Link>
                   <Link 
                     to="/docs" 
                     className="text-2xl text-white hover:text-white/80 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Documentation
+                    {t('header.navigation.documentation')}
                   </Link>
                   <Link 
                     to="/blog" 
                     className="text-2xl text-white hover:text-white/80 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Blog
+                    {t('header.navigation.blog')}
                   </Link>
                 </div>
               </div>
@@ -132,12 +132,12 @@ export function Header() {
                 <LanguageSwitcher />
                 <Button variant="secondary" size="lg" className="w-full text-xl" asChild>
                   <Link to="/login" onClick={() => setIsMenuOpen(false)}>
-                    Log in
+                    {t('header.buttons.signIn')}
                   </Link>
                 </Button>
                 <Button size="lg" className="w-full text-xl" asChild>
                   <Link to="/signup" onClick={() => setIsMenuOpen(false)}>
-                    Sign up
+                    {t('header.buttons.getStarted')}
                   </Link>
                 </Button>
               </div>
